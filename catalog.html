@@ -16,8 +16,8 @@
                     </a>
                     <nav class="main-navigation">
                         <ul class="site-navigation">
-                            <li>
-                                <a href="#">Каталог</a>
+                            <li class="parent-link inside-page">
+                                <a href="#" class="active-page">Каталог</a>
                                 <ul class="sub-menu">
                                     <li>
                                         <a href="#">Новинки</a>
@@ -36,17 +36,17 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li>
+                            <li class="delivery">
                                 <a href="#">Доставка и оплата</a>
                             </li>
-                            <li>
+                            <li class="about-company">
                                 <a href="#">О Компании</a>
                             </li>
                         </ul>
                     </nav>  
                     <ul class="user-navigation">
                     <li class="type-search">
-                        <a href="#" class="visually-hidden">Поиск</a>
+                        <a href="#"><span class="visually-hidden">Поиск</span></a>
                         <form action="https://echo.htmlacademy.ru" method="post">
                             <label for="search-form" class="visually-hidden">Поиск</label>
                             <input id="search-form" type="search" placeholder="Что ищем?" name="search">                    
@@ -162,7 +162,7 @@
                     </form>
                 </section>
                 <section class="catalog">
-                    <div class="item">
+                    <div class="catalog-content">
                         <h2 class="visually-hidden">Каталог мороженого</h2>
                         <div class="catalog-item">
                             <img src="img/catalog-icecream1.jpg" width="267" height="267" alt="Апельсиновое мороженое"> 
@@ -288,7 +288,7 @@
                     </div>
                 </section>
             </main>
-            <footer class="main-footer second-page">
+            <footer class="main-footer">
                 <div class="footer-social">
                     <ul>
                         <li>

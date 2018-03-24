@@ -19,7 +19,7 @@
                     </a>
                     <nav class="main-navigation">
                         <ul class="site-navigation">
-                            <li>
+                            <li class="parent-link main-page">
                                 <a href="#">Каталог</a>
                                 <ul class="sub-menu">
                                     <li>
@@ -39,17 +39,17 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li>
+                            <li class="delivery">
                                 <a href="#">Доставка и оплата</a>
                             </li>
-                            <li>
+                            <li class="about-company">
                                 <a href="#">О Компании</a>
                             </li>
                         </ul>
                     </nav>  
                     <ul class="user-navigation">
                         <li class="type-search">
-                            <a href="#" class="visually-hidden">Поиск</a>
+                            <a href="#"><span class="visually-hidden">Поиск</span></a>
                             <form action="https://echo.htmlacademy.ru" method="post">
                                 <label for="search-form" class="visually-hidden">Поиск</label>
                                 <input id="search-form" type="search" placeholder="Что ищем?" name="search">
@@ -105,6 +105,7 @@
                     </div>
                 </div>
                 <section class="bonus container">
+                    <h2 class="visually-hidden">Бонусные предложения</h2>
                     <div class="bonus-raspberry">
                         <h3>Малинка даром!</h3>
                         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -118,7 +119,7 @@
                 </section>
                 <section class="hits container">
                     <h2 class="visually-hidden">Популярные товары</h2>
-                    <div class="catalog-item pseudo">
+                    <div class="catalog-item icon-hit">
                         <img src="img/catalog-icecream1.jpg" width="267" height="267" alt="Апельсиновое мороженое"> 
                         <p class="price">310<span class="ruble"></span><span class="kilo">/кг</span></p>
                         <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -126,7 +127,7 @@
                             <a href="#" class="btn btn-view">Быстрый просмотр</a>
                         </div>
                     </div>
-                    <div class="catalog-item pseudo">
+                    <div class="catalog-item icon-hit">
                         <img src="img/catalog-icecream2.jpg" width="267" height="267" alt="Кофейное мороженое"> 
                         <p class="price">380<span class="ruble"></span><span class="kilo">/кг</span></p>
                         <a href="#">Сливочно-кофейное с кусочками шоколада</a>
@@ -134,7 +135,7 @@
                             <a href="#" class="btn btn-view">Быстрый просмотр</a>
                         </div>
                     </div>
-                    <div class="catalog-item pseudo">
+                    <div class="catalog-item icon-hit">
                         <img src="img/catalog-icecream3.jpg" width="267" height="267" alt="Клубничное мороженое"> 
                         <p class="price">355<span class="ruble"></span><span class="kilo">/кг</span></p>
                         <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
@@ -142,7 +143,7 @@
                             <a href="#" class="btn btn-view">Быстрый просмотр</a>
                         </div>
                     </div>
-                    <div class="catalog-item pseudo">
+                    <div class="catalog-item icon-hit">
                         <img src="img/catalog-icecream4.jpg" width="267" height="267" alt="Мороженое Крем-брюле"> 
                         <p class="price">415<span class="ruble"></span><span class="kilo">/кг</span></p>
                         <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
@@ -156,10 +157,10 @@
                     <div class="about-us">
                         <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
                         <ul>
-                            <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-                            <li>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-                            <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-                            <li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+                            <li class="benefit-icon ice-icon">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+                            <li class="benefit-icon cow-icon">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+                            <li class="benefit-icon eco-icon">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+                            <li class="benefit-icon thermometer-icon">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
                         </ul>
                     </div>
                 </section>
@@ -186,15 +187,14 @@
                 </div>
                 <section class="contacts">
                     <h2 class="visually-hidden">Наши контакты</h2>
-                    <p class="fullback-map">
-                        <img src="img/map.jpg" width="1200" height="430" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-                    </p>
-                    <div class="address">
-                        <p>Адрес главного офиса <br>и офлайн-магазина: <br><b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
-                        <p>Для заказов по телефону:</p>
-                        <a href="tel:+78124502525">8 812 450-25-25</a>
-                        <p>(с 10 до 20 ежедневно)</p>
-                        <a href="#" class="btn btn-fullback">Форма обратной связи</a>                    
+                    <div class="container">
+                        <div class="address">
+                            <p>Адрес главного офиса <br>и офлайн-магазина: <br><b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
+                            <p>Для заказов по телефону:</p>
+                            <a href="tel:+78124502525">8 812 450-25-25</a>
+                            <p>(с 10 до 20 ежедневно)</p>
+                            <a href="#" class="btn btn-fullback">Форма обратной связи</a>                    
+                        </div>
                     </div>
                     <div class="feedback-form">
                         <p>Мы обязательно вам ответим!</p>
