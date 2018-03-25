@@ -8,9 +8,9 @@
         <title>HTML Academy: Глейси</title>
     </head>
     <body>
-        <input id="radio1" type="radio" name="toggle" class="toggle1" checked>
-        <input id="radio2" type="radio" name="toggle" class="toggle2">
-        <input id="radio3" type="radio" name="toggle" class="toggle3">
+        <input id="radio1" type="radio" name="toggle" class="toggle1 visually-hidden" checked>
+        <input id="radio2" type="radio" name="toggle" class="toggle2 visually-hidden">
+        <input id="radio3" type="radio" name="toggle" class="toggle3 visually-hidden">
         <div class="index-background">
             <header class="main-header container">
                 <div class="flex-wrapper">
@@ -23,7 +23,7 @@
                                 <a href="#">Каталог</a>
                                 <ul class="sub-menu">
                                     <li>
-                                        <a href="#">Новинки</a>
+                                        <a href="#" class="after-line">Новинки</a>
                                     </li>
                                     <li>
                                         <a href="catalog.html">Сливочное</a>
@@ -66,11 +66,13 @@
                                     <label for="login-password" class="visually-hidden">Пароль</label> 
                                     <input id="login-password" type="password" placeholder="Пароль" name="password">
                                 </p>
+                                <div class="btn-wrapper">
                                 <button type="submit" class="btn btn-login">Войти</button>
                                 <div class="login-option">
                                     <a href="#">Забыли пароль?</a>
                                     <a href="#">Новая регистрация</a>
                                 </div>    
+                            </div> 
                             </form>
                         </li>
                         <li class="basket">
@@ -99,9 +101,9 @@
                         <a href="#" class="btn btn-slide">Давайте оба!</a>
                     </div>
                     <div class="banner-radio">
-                        <label for="radio1" class="visually-hidden toggle1">Первый слайд</label>
-                        <label for="radio2" class="visually-hidden toggle2">Второй слайд</label>
-                        <label for="radio3" class="visually-hidden toggle3">Третий слайд</label>
+                        <label for="radio1" class="toggle1">Первый слайд</label>
+                        <label for="radio2" class="toggle2">Второй слайд</label>
+                        <label for="radio3" class="toggle3">Третий слайд</label>
                     </div>
                 </div>
                 <section class="bonus container">
@@ -198,7 +200,7 @@
                     </div>
                     <div class="feedback-form">
                         <p>Мы обязательно вам ответим!</p>
-                        <button type="button" class="modal-close">Закрыть</button>
+                        <button type="button" class="modal-close-big">Закрыть</button>
                         <form action="https://echo.htmlacademy.ru" method="post">
                             <p>
                                 <label for="feedback-name" class="visually-hidden">Имя</label>
@@ -212,7 +214,7 @@
                                 <label for="textarea" class="visually-hidden">Ваш вопрос</label>
                                 <textarea id="textarea" placeholder="Напишите что-нибудь..." name="question"></textarea>
                             </p>
-                                <button type="submit" class="btn btn-feedback">Отправить</button>
+                            <button type="submit" class="btn btn-feedback">Отправить</button>
                         </form>
                     </div>
                 </section>

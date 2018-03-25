@@ -63,32 +63,36 @@
                                 <label for="login-password" class="visually-hidden">Пароль</label> 
                                 <input id="login-password" type="password" placeholder="Пароль" name="password">
                             </p>
-                            <button type="submit" class="btn btn-login">Войти</button>
-                            <div class="login-option">
-                                <a href="#">Забыли пароль?</a>
-                                <a href="#">Новая регистрация</a>
-                            </div>    
+                            <div class="btn-wrapper">
+                                <button type="submit" class="btn btn-login">Войти</button>
+                                <div class="login-option">
+                                    <a href="#">Забыли пароль?</a>
+                                    <a href="#">Новая регистрация</a>
+                                </div>    
+                            </div>
                         </form>
                     </li>
                     <li class="basket">
                         <a href="#" class="basket-full">2 товара</a>
                         <div class="basket-box">
                             <table class="basket-table">
-                                <tr>
+                                <tr class="first-row">
                                     <td class="cell-1"><button type="button" class="modal-close">Удалить</button></td>
                                     <td class="cell-2">Пломбир с апельсиновым джемом</td>
                                     <td class="cell-3">1,5 кг x <span>200 руб.</span></td>
                                     <td class="cell-4">300 руб.</td>
                                 </tr>
-                                <tr>
+                                <tr class="second-row">
                                     <td class="cell-1"><button type="button" class="modal-close">Удалить</button></td>
                                     <td class="cell-2">Клубничный пломбир с присыпкой  из белого шоколада</td>
                                     <td class="cell-3">1,5 кг x <span>300 руб.</span></td>
                                     <td class="cell-4">450 руб.</td>
                                 </tr>
                             </table>
-                            <p><b>Итого: 750 руб.</b></p>
-                            <a href="#" class="btn btn-basket">Оформить заказ</a>
+                            <div class="column-wrapper">
+                                <p>Итого: 750 руб.</p>
+                                <a href="#" class="btn btn-basket">Оформить заказ</a>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -105,7 +109,7 @@
                             <a href="index.html">Главная</a>
                         </li>
                         <li>
-                            <a href="#">Каталог</a>
+                            <a href="#" class="after-line">Каталог</a>
                         </li>
                         <li>Сливочное</li>
                     </ul>
@@ -126,16 +130,18 @@
                         <fieldset class="sort-price">
                             <legend>Цена: 100 руб.-500 руб.</legend>
                             <div class="sort-form">
-                                <label for="range" class="visually-hidden">Сортировка по цене</label>
-                                <input id="range" type="range" min="100" max="500" value="200" name="range">
+                                <div class="range-button">
+                                    <label for="range" class="visually-hidden">Сортировка по цене</label>
+                                    <input id="range" type="range" min="100" max="500" value="200" name="range">
+                                </div>
                             </div>    
                         </fieldset>
                         <fieldset class="sort-fatness">
                             <legend>Жирность:</legend>
-                            <div class="sort-form">
+                            <div class="sort-form sort-fat">
                                 <input type="radio" id="nofat" value="0" name="fatness" class="visually-hidden radio-sort">
                                 <label for="nofat">0%</label>
-                                <input type="radio" id="lessthan10" value="10" name="fatness" class="visually-hidden radio-sort" checked >
+                                <input type="radio" id="lessthan10" value="10" name="fatness" class="visually-hidden radio-sort" checked>
                                 <label for="lessthan10">до 10%</label>
                                 <input type="radio" id="lessthan30" value="30" name="fatness" class="visually-hidden radio-sort">
                                 <label for="lessthan30">до 30%</label>
@@ -145,7 +151,7 @@
                         </fieldset>
                         <fieldset class="sort-additive">
                             <legend>Наполнители:</legend>
-                            <div class="sort-form">
+                            <div class="sort-form sort-additive">
                                 <input type="checkbox" id="choco" value="choco" name="additive" class="visually-hidden checkbox-sort" checked>
                                 <label for="choco">шоколадные</label>
                                 <input type="checkbox" id="sugar" value="sugar" name="additive" class="visually-hidden checkbox-sort" checked>
