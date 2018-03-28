@@ -198,25 +198,6 @@
                             <a href="#" class="btn btn-fullback">Форма обратной связи</a>                    
                         </div>
                     </div>
-                    <div class="feedback-form">
-                        <p>Мы обязательно вам ответим!</p>
-                        <button type="button" class="modal-close-big">Закрыть</button>
-                        <form action="https://echo.htmlacademy.ru" method="post">
-                            <p>
-                                <label for="feedback-name" class="visually-hidden">Имя</label>
-                                <input id="feedback-name" type="text" placeholder="Как вас зовут?" name="name">
-                            </p>
-                            <p>
-                                <label for="feedback-email" class="visually-hidden">Электронная почта</label>
-                                <input id="feedback-email" type="text" placeholder="Ваша почта для ответа?" name="email">
-                            </p>
-                            <p>
-                                <label for="textarea" class="visually-hidden">Ваш вопрос</label>
-                                <textarea id="textarea" placeholder="Напишите что-нибудь..." name="question"></textarea>
-                            </p>
-                            <button type="submit" class="btn btn-feedback">Отправить</button>
-                        </form>
-                    </div>
                 </section>
             </main>
             <footer class="main-footer container">
@@ -260,5 +241,26 @@
                 </div>
             </footer>
         </div>
+        <div class="feedback-form">
+            <p>Мы обязательно вам ответим!</p>
+            <button type="button" class="modal-close-big">Закрыть</button>
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                    <label for="feedback-name" class="visually-hidden">Имя</label>
+                    <input id="feedback-name" type="text" placeholder="Как вас зовут?" name="name">
+                </p>
+                <p>
+                    <label for="feedback-email" class="visually-hidden">Электронная почта</label>
+                    <input id="feedback-email" type="text" placeholder="Ваша почта для ответа?" name="email">
+                </p>
+                <p>
+                    <label for="textarea" class="visually-hidden">Ваш вопрос</label>
+                    <textarea id="textarea" placeholder="Напишите что-нибудь..." name="question"></textarea>
+                </p>
+                <button type="submit" class="btn btn-feedback">Отправить</button>
+            </form>
+        </div>
+            <div class="feedback-overlay"></div>
+        <script src="js/popup.js"></script>
     </body>
 </html>
