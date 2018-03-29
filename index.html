@@ -187,7 +187,7 @@
                         </div>
                     </section>    
                 </div>
-                <section class="contacts">
+                <section class="contacts" id="map">
                     <h2 class="visually-hidden">Наши контакты</h2>
                     <div class="container">
                         <div class="address">
@@ -260,7 +260,24 @@
                 <button type="submit" class="btn btn-feedback">Отправить</button>
             </form>
         </div>
-            <div class="feedback-overlay"></div>
+        <div class="feedback-overlay"></div>
         <script src="js/popup.js"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        <script type="text/javascript">
+            ymaps.ready(init);
+            var myMap,
+                myPlacemark;
+
+            function init(){     
+                myMap = new ymaps.Map("map", {
+                    center: [59.938631, 30.323055],
+                    zoom: 17
+                });
+                
+                myPlacemark = new ymaps.Placemark([59.938631, 30.323055]);
+                
+                myMap.geoObjects.add(myPlacemark);
+            }
+        </script>
     </body>
 </html>

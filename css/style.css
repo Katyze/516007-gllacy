@@ -796,7 +796,6 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    min-height: 133px;
     -ms-flex-line-pack: justify;
         align-content: space-between;
 }
@@ -967,13 +966,13 @@ a {
 
 .sort-add {
     width: 703px;
+    margin-top: 15px;
 }
 
 .sort fieldset {
     border: none;
     color: #ffffff;
-    margin: 0;
-    margin-right: 15px;
+    margin-right: 12px;
     padding: 0;
 }
 
@@ -1060,7 +1059,7 @@ a {
     background-color: #811031;
     background-image: url("../img/raspberry-bg.jpg");
     background-position: -50px -94px;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 .bonus h3 {
@@ -1092,7 +1091,7 @@ a {
     background-color: #553622;
     background-image: url("../img/chocolate-bg.jpg");
     background-position: -218px -104px;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 .hits,
@@ -1396,6 +1395,7 @@ a {
 .news {
     background-image: url("../img/bg-post.svg");
     background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 15px;
     min-height: 220px;
     padding: 5px;
@@ -1469,6 +1469,7 @@ a {
     right: 28px;
     top: 62px;
     width: 303px;
+    z-index: 2;
 }
 
 .address p {
