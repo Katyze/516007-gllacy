@@ -63,3 +63,19 @@ window.addEventListener("keydown", function(evt) {
         }
     }
 });
+
+
+ymaps.ready(init);
+        var myMap,
+            myPlacemark;
+
+        function init(){     
+            myMap = new ymaps.Map("map", {
+                center: [59.938631, 30.323055],
+                zoom: 17
+            });
+
+            myPlacemark = new ymaps.Placemark([59.938631, 30.323055]);
+
+            myMap.geoObjects.add(myPlacemark);
+        }
