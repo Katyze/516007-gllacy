@@ -13,6 +13,7 @@ var storage = "";
 
 try {
     storage = localStorage.getItem("yourName");
+    storage = localStorage.getItem("email");
 } catch (err) {
     isStorageSupport = false;
 }
@@ -47,6 +48,7 @@ form.addEventListener("submit", function(evt) {
     } else {
         if (isStorageSupport) {
             localStorage.setItem("yourName", yourName.value);
+            localStorage.setItem("email", email.value);
         }
     }
 });
@@ -65,17 +67,12 @@ window.addEventListener("keydown", function(evt) {
 });
 
 
-ymaps.ready(init);
-        var myMap,
-            myPlacemark;
+ymaps.ready(function () {
+    var myMap = new ymaps.Map("map", {
+            center: [59.939130, 30.329400],
+            zoom: 16
+        }),
+        myPlacemark = new ymaps.Placemark([59.938631, 30.323055]);
 
-        function init(){     
-            myMap = new ymaps.Map("map", {
-                center: [59.939130, 30.329400],
-                zoom: 16
-            });
-
-            myPlacemark = new ymaps.Placemark([59.938631, 30.323055]);
-
-            myMap.geoObjects.add(myPlacemark);
-        }
+    myMap.geoObjects.add(myPlacemark);
+});
