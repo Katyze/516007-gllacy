@@ -105,6 +105,8 @@ a {
 }
 
 .inner-light {
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), transparent 650px);
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.2), transparent 650px);
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), transparent 650px);
 }
 
@@ -855,6 +857,7 @@ a {
 }
 
 .sort-price .sort-form::after {
+    display: block;
     content: "";
     position: absolute;
     top: 50%;
@@ -920,20 +923,20 @@ a {
 }
 
 .radio-sort + label::before {
-	background-image: url("../img/radio-off.svg");
-	background-repeat: no-repeat;
-	background-size: contain;
-	content: "";
-	height: 22px;
-	left: 15px;
-	position: absolute;
-	top: 0;
-	width: 22px;
+    background-image: url("../img/radio-off.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 22px;
+    left: 15px;
+    position: absolute;
+    top: 0;
+    width: 22px;
     opacity: 0.8;
 }
 
 .radio-sort:checked + label::before {
-	background-image: url("../img/radio-on.svg");
+    background-image: url("../img/radio-on.svg");
     opacity: 0.8;
 }
 
