@@ -844,26 +844,26 @@ a {
 }
 
 .sort-price .sort-form::before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 44px;
-	height: 4px;
-	width: 106px;
-	margin-top: -2px;
-	background-color: #f8f7f4;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 44px;
+    height: 4px;
+    width: 106px;
+    margin-top: -2px;
+    background-color: #f8f7f4;
 }
 
 .sort-price .sort-form::after {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 176px;
-	height: 4px;
-	margin-top: -2px;
-	margin-left: -88px;
-	background-color: rgba(248, 247, 244, 0.5);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 176px;
+    height: 4px;
+    margin-top: -2px;
+    margin-left: -88px;
+    background-color: rgba(248, 247, 244, 0.5);
 }
 
 .range-button {
@@ -873,14 +873,14 @@ a {
 .range-button::before,
 .range-button::after {
     content: "";
-	position: absolute;
-	z-index: 5;
-	width: 20px;
-	height: 23px;
-	background-image: url("../img/filter-button.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	cursor: pointer;
+    position: absolute;
+    z-index: 5;
+    width: 20px;
+    height: 23px;
+    background-image: url("../img/filter-button.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
     top: 8px;
 }
 
