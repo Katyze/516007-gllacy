@@ -76,7 +76,7 @@ ymaps.ready(function () {
             hintContent: '«Gllacy» - Магазин мороженого',
         }, {
             iconLayout: 'default#image',
-            iconImageHref: '/img/pin-shadow.png',
+            iconImageHref: 'img/pin-shadow.png',
             iconImageSize: [218, 142],
             iconImageOffset: [-45, -135]
         });
