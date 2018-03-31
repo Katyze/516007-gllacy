@@ -188,6 +188,7 @@ a {
 }
 
 .catalog-item {
+    align-self: flex-start;
     width: 267px;
     position: relative;
 }
@@ -1142,7 +1143,7 @@ a {
 }
 
 .catalog-content .catalog-item {
-    margin-bottom: 41px;
+    margin-bottom: 39px;
 }
 
 .catalog-item img {
@@ -1205,12 +1206,13 @@ a {
     -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
             box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
     display: none;
-    height: 405px;
+    min-height: 100%;
     left: -15px;
     position: absolute;  
     top: -10px;
     z-index: 1;
     width: 295px;
+    bottom: -75px;
 }
 
 .catalog-item:hover {

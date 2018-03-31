@@ -9,11 +9,12 @@ var email = popup.querySelector("[name=email]");
 var question = popup.querySelector("[name=question]");
 
 var isStorageSupport = true;
-var storage = "";
+var storageName = "";
+var storageEmail = "";
 
 try {
-    storage = localStorage.getItem("yourName");
-    storage = localStorage.getItem("email");
+    storageName = localStorage.getItem("yourName");
+    storageEmail = localStorage.getItem("email");
 } catch (err) {
     isStorageSupport = false;
 }
@@ -24,9 +25,10 @@ link.addEventListener("click", function(evt) {
     overlay.classList.add("overlay-show");
 
     yourName.focus();
-    if (storage) {
-        yourName.value = storage;
-        email.focus();
+    if (storageName || storageEmail) {
+        yourName.value = storageName;
+        email.value = storageEmail;
+        question.focus();
     } else {
         yourName.focus();
     }
