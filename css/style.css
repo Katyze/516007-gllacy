@@ -171,7 +171,7 @@ a {
 }
 
 .catalog-content {
-    margin-bottom: 43px;
+    margin-bottom: 40px;
 }
 
 .catalog {
@@ -1233,6 +1233,7 @@ a {
 }
 
 .paginator {
+    margin-top: 44px;
     margin-bottom: 30px;
     font-size: 16px;
     font-weight: 500;
