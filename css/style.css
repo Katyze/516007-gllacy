@@ -1733,47 +1733,39 @@ a {
     font-weight: 700;
 }
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
+.input-style::-webkit-input-placeholder {
     color: #999999;
     font-weight: 400;
 }
 
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
+.input-style:-ms-input-placeholder {
     color: #999999;
     font-weight: 400;
 }
 
-input::-ms-input-placeholder,
-textarea::-ms-input-placeholder {
+.input-style::-ms-input-placeholder {
     color: #999999;
     font-weight: 400;
 }
 
-input::placeholder,
-textarea::placeholder {
+.input-style::placeholder {
     color: #999999;
     font-weight: 400;
 }
 
-input:focus::-webkit-input-placeholder,
-textarea:focus::-webkit-input-placeholder {
+.input-style:focus::-webkit-input-placeholder {
     color: transparent;
 }
 
-input:focus:-ms-input-placeholder,
-textarea:focus:-ms-input-placeholder {
+.input-style:focus:-ms-input-placeholder {
     color: transparent;
 }
 
-input:focus::-ms-input-placeholder,
-textarea:focus::-ms-input-placeholder {
+.input-style:focus::-ms-input-placeholder {
     color: transparent;
 }
 
-input:focus::placeholder,
-textarea:focus::placeholder {
+.input-style:focus::placeholder {
     color: transparent;
 }
 
