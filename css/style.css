@@ -1143,17 +1143,22 @@ a {
 }
 
 .catalog-content .catalog-item {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 }
 
 .catalog-item img {
     border-radius: 50%;
-    margin-bottom: 7px;
+    margin-bottom: 8px;
     position: relative;
     z-index: 2;
 }
 
-.catalog-item > a {
+.catalog-item h3 {
+    margin: 0;
+    padding: 0 5px;
+}
+
+.name-item a {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     color: #ffffff;
     font-size: 16px;
@@ -1163,9 +1168,9 @@ a {
     z-index: 2;
 }
 
-.catalog-item > a:hover,
-.catalog-item > a:focus,
-.catalog-item > a:active {
+.name-item a:hover,
+.name-item a:focus,
+.name-item a:active {
     border-bottom: 1px solid rgba(255, 188, 158, 0.3);
     color: #ffbc9e;
     outline: none;
@@ -1195,8 +1200,9 @@ a {
 }
 
 .btn-view {
-    bottom: 15px;
+    bottom: 21px;
     left: 46px;
+    padding: 10px 16px;
     position: absolute;
 }
 
@@ -1212,7 +1218,7 @@ a {
     top: -10px;
     z-index: 1;
     width: 295px;
-    bottom: -75px;
+    bottom: -80px;
 }
 
 .catalog-item:hover {
@@ -1225,11 +1231,6 @@ a {
 
 .kilo {
     font-size: 30px;
-}
-
-.btn-view {
-    padding: 10px 15px;
-    position: absolute;
 }
 
 .paginator {
