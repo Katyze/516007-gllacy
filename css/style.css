@@ -1719,6 +1719,7 @@ a {
     min-height: 156px;
     min-width: 430px;
     max-width: 430px;
+    resize: none;
 }
 
 .feedback-form input:hover,

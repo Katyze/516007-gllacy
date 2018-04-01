@@ -75,14 +75,13 @@ ymaps.ready(function () {
             zoom: 16
         }),
         myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {
-            hintContent: '«Gllacy» - Магазин мороженого',
+            hintContent: "«Gllacy» - Магазин мороженого",
         }, {
-            iconLayout: 'default#image',
-            iconImageHref: 'img/pin-shadow.png',
+            iconLayout: "default#image",
+            iconImageHref: "img/pin-shadow.png",
             iconImageSize: [218, 142],
             iconImageOffset: [-45, -135]
         });
     
     myMap.geoObjects.add(myPlacemark);
 });
-
