@@ -1064,7 +1064,7 @@ a {
     font-size: 60px;
     font-weight: 700;
     line-height: 60.35px;
-    margin: 0 0 40px 233px;
+    margin: 0 auto 40px;
     width: 680px;
 }
 
@@ -1964,6 +1964,10 @@ a {
     line-height: 18px;
     margin-left: auto;
     margin-top: 19px;
+}
+
+.index-background .copyright {
+    margin-top: 17px;
 }
 
 .copyright p {
