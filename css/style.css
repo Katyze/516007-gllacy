@@ -817,7 +817,7 @@ a {
 
 .sort-by select {
     width: 193px;
-    padding-left: 10px;
+    padding-left: 12px;
     border-radius: 17px;
     background-image: url("../img/icon-down-white.svg");
     background-position: 165px 13px;
@@ -894,7 +894,7 @@ a {
 }
 
 .range-button::after {
-    right: 65px;
+    right: 67px;
 }
 
 .sort-price {
@@ -922,7 +922,8 @@ a {
 }
 
 .sort-additive label {
-    padding-left: 50px;
+    padding-left: 48px;
+    min-width: 109px;
 }
 
 .radio-sort + label,
