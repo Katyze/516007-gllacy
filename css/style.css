@@ -188,7 +188,8 @@ a {
 }
 
 .catalog-item {
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     width: 267px;
     position: relative;
 }
