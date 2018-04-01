@@ -1064,8 +1064,8 @@ a {
     font-size: 60px;
     font-weight: 700;
     line-height: 60.35px;
-    margin: 0;
-    margin-bottom: 40px;
+    margin: 0 0 40px 233px;
+    width: 680px;
 }
 
 .btn-slide {
@@ -1526,7 +1526,7 @@ a {
 }
 
 .address p:nth-of-type(2) {
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
 
 .address p:nth-of-type(3) {
@@ -1534,7 +1534,7 @@ a {
 }
 
 .address b {
-    margin-bottom: 18px;
+    margin-bottom: 17px;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -1963,7 +1963,7 @@ a {
     font-weight: 400;
     line-height: 18px;
     margin-left: auto;
-    margin-top: 17px;
+    margin-top: 19px;
 }
 
 .copyright p {
